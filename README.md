@@ -2,7 +2,7 @@
 
 Personal portfolio showcasing my software engineering work and projects.
 
-**Live:** [wasifsiddique.netlify.app](https://wasifsiddique.netlify.app/)
+**Live:** [https://www.wasifsiddique.com](https://www.wasifsiddique.com/)
 
 ## Tech Stack
 
@@ -62,7 +62,6 @@ Publish directory: `build`
 ## Contact
 
 Wasif Sarwar Siddique  
-[wasifsiddique.netlify.app](https://wasifsiddique.netlify.app/)  
-[linkedin.com/in/wasifsiddique](https://linkedin.com/in/wasifsiddique)  
-[github.com/wasifsarwar](https://github.com/wasifsarwar)  
-wasif.sarwar9@gmail.com
+- [LinkedIn](https://linkedin.com/in/wasifsiddique)  
+- [Github](https://github.com/wasifsarwar)  
+- [email](mailto:wasif.sarwar9@gmail.com)
