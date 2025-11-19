@@ -1,0 +1,85 @@
+/* About Section */
+.about {
+  padding: 4rem 2rem;
+  background: transparent;
+}
+
+.about .container {
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.about h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  text-align: left;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.about h2::before {
+  content: '02.';
+  position: absolute;
+  left: -4rem;
+  top: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  color: #ff6b00;
+  font-weight: 400;
+}
+
+.about h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: #667eea;
+}
+
+.about-content {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #c0c0c0;
+  position: relative;
+  z-index: 1;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.skill-category {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-category h3 {
+  color: #667eea;
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.skill-category span {
+  color: #999;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

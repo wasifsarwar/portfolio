@@ -1,0 +1,84 @@
+/* Contact Section */
+.contact {
+  padding: 4rem 2rem;
+  background: transparent;
+  text-align: left;
+}
+
+.contact .container {
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.contact h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  text-align: left;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  position: relative;
+}
+
+.contact h2::before {
+  content: '04.';
+  position: absolute;
+  left: -4rem;
+  top: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  color: #ff6b00;
+  font-weight: 400;
+}
+
+.contact h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background: #667eea;
+}
+
+.contact-description {
+  font-size: 1.15rem;
+  color: #c0c0c0;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.contact-link:hover {
+  border-color: #667eea;
+  background: rgba(102, 126, 234, 0.1);
+  color: #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
