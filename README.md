@@ -42,16 +42,6 @@ portfolio/
 │   └── App.tsx
 ```
 
-## Sections
-
-**Hero** - Name with typewriter effect, tagline, and CTAs
-
-**About** - Experience at Axon, Nike, DIRECTV, and Nordstrom with quantifiable achievements
-
-**Projects** - MindPulse (AI mental health), Gocart (e-commerce API), Rate Limiter (concurrency)
-
-**Contact** - Resume download, email, LinkedIn, GitHub
-
 ## Deployment
 
 Deployed on Netlify with automatic builds from main branch.
