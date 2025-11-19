@@ -49,6 +49,8 @@
   color: #ffffff;
   cursor: pointer;
   font-size: 0.9rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
   transition: color 0.3s ease;
   padding: 0.5rem 0;
   position: relative;

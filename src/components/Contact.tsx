@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
       >
         <motion.h2 variants={itemVariants}>Let's Work Together</motion.h2>
         <motion.p variants={itemVariants} className="contact-description">
-          Open to software engineering opportunities and interesting technical challenges. Let's build something scalable together.
+          I'm looking for backend engineering roles where I can solve real world problems at scale. If you're working on something challenging, let's talk!
         </motion.p>
         <motion.div className="contact-links" variants={containerVariants}>
           {contactLinks.map((link, index) => {
