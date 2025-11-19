@@ -49,6 +49,18 @@ const About: React.FC = () => {
       >
         <motion.h2 variants={itemVariants}>About Me</motion.h2>
         <motion.div className="about-content" variants={itemVariants}>
+          <div className="about-image-container">
+            <div className="image-wrapper">
+              <div className="image-inner">
+                <img
+                  src={process.env.PUBLIC_URL + '/LinkedInHeadshot.jpg'}
+                  alt="Wasif Siddique"
+                  className="about-image"
+                />
+                <div className="image-overlay"></div>
+              </div>
+            </div>
+          </div>
           <div className="about-text">
             <p>
               I engineer high-performance systems that handle massive scale. At <a href="https://www.axon.com" target="_blank" rel="noopener noreferrer" className="company-link">Axon</a>, I built evidence processing platforms that maintained 99.99% uptime for critical public safety data. Before that, I optimized retail pipelines at <a href="https://www.nike.com" target="_blank" rel="noopener noreferrer" className="company-link">Nike</a> to process 50 million daily transactions with zero data loss.
