@@ -63,7 +63,7 @@ const About: React.FC = () => {
           </div>
           <div className="about-text">
             <p>
-              I build systems that handle real scale and real consequences. At <a href="https://www.axon.com" target="_blank" rel="noopener noreferrer" className="company-link">Axon</a>, my evidence processing platform maintained 99.99% uptime for critical public safety data. At <a href="https://www.nike.com" target="_blank" rel="noopener noreferrer" className="company-link">Nike</a>, I optimized retail pipelines processing 50 million daily transactions with zero data loss.
+              I build systems that handle high volume scale and performance. At <a href="https://www.axon.com" target="_blank" rel="noopener noreferrer" className="company-link">Axon</a>, I worked on evidence processing platform maintaining 99.99% uptime for critical public safety data. At <a href="https://www.nike.com" target="_blank" rel="noopener noreferrer" className="company-link">Nike</a>, I optimized retail pipelines processing 50 million daily transactions with zero data loss.
             </p>
             <p style={{ marginTop: '1rem' }}>
               My work delivers measurable impact. At <a href="https://www.directv.com/" target="_blank" rel="noopener noreferrer" className="company-link">DIRECTV</a>, I caught 50 weekly schedule conflicts, saved $5M annually, and cut manual work by 85%. At <a href="https://www.nordstrom.com" target="_blank" rel="noopener noreferrer" className="company-link">Nordstrom</a>, I slashed supply chain time in half, automated hiring workflows, and reduced onboarding by 40%. I'm tech-agnostic and love solving hard problems with the right tools.
