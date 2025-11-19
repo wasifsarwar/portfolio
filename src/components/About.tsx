@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Skill } from '../types';
+import './About.css';
 
 const About: React.FC = () => {
   const containerVariants = {

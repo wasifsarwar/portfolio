@@ -1,17 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { NavigationProps } from '../types';
+import './Navigation.css';
 
 const Navigation: React.FC<NavigationProps> = ({ scrollToSection }) => {
   return (
     <nav className="nav">
-      <motion.div 
+      <motion.div
         className="nav-container"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="logo">Portfolio</div>
+        <div className="logo">Wasif Siddique</div>
         <ul className="nav-links">
           <li><button onClick={() => scrollToSection('home')}>Home</button></li>
           <li><button onClick={() => scrollToSection('about')}>About</button></li>

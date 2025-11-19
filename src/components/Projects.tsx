@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, ExternalLink } from 'lucide-react';
+import { GithubIcon, ExternalLink } from 'lucide-react';
 import { Project } from '../types';
+import './Projects.css';
 
 const Projects: React.FC = () => {
   const containerVariants = {
@@ -26,26 +27,26 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "Microservices Architecture Platform",
-      description: "Designed and implemented a scalable microservices platform using Spring Boot and Docker, handling 10K+ concurrent users with 99.9% uptime.",
-      technologies: ["Java", "Spring Boot", "Docker", "Kubernetes", "PostgreSQL"],
-      githubUrl: "#",
+      title: "MindPulse",
+      description: "AI mental health support system using Claude 3.5 Sonnet with RAG trained on 3,512+ counseling conversations. Features risk-based assessment, automatic provider SMS alerts, and emotional health discrepancy detection.",
+      technologies: ["Python", "FastAPI", "Claude AI", "RAG", "TypeScript", "React", "Twilio"],
+      githubUrl: "https://github.com/wasifsarwar/MindPulse",
       liveUrl: "#"
     },
     {
       id: 2,
-      title: "Real-time Data Processing Pipeline",
-      description: "Built a high-throughput data processing system using Apache Kafka and Go, processing 1M+ events per day with sub-second latency.",
-      technologies: ["Go", "Kafka", "Redis", "MongoDB", "AWS"],
-      githubUrl: "#",
-      liveUrl: "#"
+      title: "Gocart",
+      description: "A modern, scalable microservices-based e-commerce API built with Go, featuring comprehensive testing, CI/CD, and beautiful API documentation.",
+      technologies: ["Go", "PostgreSQL", "Docker", "Typescript", "React", "Supabase", "GCP"],
+      githubUrl: "https://github.com/wasifsarwar/gocart",
+      liveUrl: "https://gocartshopping.netlify.app/"
     },
     {
       id: 3,
-      title: "API Gateway & Authentication Service",
-      description: "Developed a centralized API gateway with JWT-based authentication, rate limiting, and request routing for multiple backend services.",
-      technologies: ["Node.js", "Express", "JWT", "Redis", "AWS Lambda"],
-      githubUrl: "#",
+      title: "Rate Limiter",
+      description: "High-performance rate limiter using sliding window log algorithm. Features fine-grained locking for concurrent scalability and Caffeine cache with automatic cleanup to prevent memory leaks in production environments.",
+      technologies: ["Java", "Caffeine Cache", "Concurrency", "Algorithm Design"],
+      githubUrl: "https://github.com/wasifsarwar/RateLimiter",
       liveUrl: "#"
     }
   ];
@@ -70,7 +71,15 @@ const Projects: React.FC = () => {
               transition={{ duration: 0.3 }}
             >
               <div className="project-image">
-                <div className="project-placeholder">Project {project.id}</div>
+                {project.githubUrl && project.githubUrl !== '#' ? (
+                  <img
+                    src={`https://opengraph.githubassets.com/1${new URL(project.githubUrl).pathname}`}
+                    alt={`${project.title} repository preview`}
+                    className="github-preview"
+                  />
+                ) : (
+                  <div className="project-placeholder">{project.title}</div>
+                )}
               </div>
               <div className="project-content">
                 <h3>{project.title}</h3>
@@ -81,17 +90,27 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
                 <div className="project-links">
-                  {project.githubUrl && (
-                    <button className="project-link">
-                      <Github size={16} />
+                  {project.githubUrl && project.githubUrl !== '#' && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
+                      <GithubIcon size={16} />
                       Code
-                    </button>
+                    </a>
                   )}
-                  {project.liveUrl && (
-                    <button className="project-link">
+                  {project.liveUrl && project.liveUrl !== '#' && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                    >
                       <ExternalLink size={16} />
                       Live Demo
-                    </button>
+                    </a>
                   )}
                 </div>
               </div>

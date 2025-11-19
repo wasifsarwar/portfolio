@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { ContactLink } from '../types';
+import './Contact.css';
 
 const Contact: React.FC = () => {
   const containerVariants = {
