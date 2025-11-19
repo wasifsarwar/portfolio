@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, FileText } from 'lucide-react';
 import { ContactLink } from '../types';
 import './Contact.css';
 
@@ -25,6 +25,11 @@ const Contact: React.FC = () => {
   };
 
   const contactLinks: ContactLink[] = [
+    {
+      href: `${process.env.PUBLIC_URL}/resume/Wasif_Sarwar_Siddique_Resume.pdf`,
+      icon: FileText,
+      label: "Download Resume"
+    },
     {
       href: "mailto:wasif.sarwar9@gmail.com",
       icon: Mail,
@@ -58,6 +63,9 @@ const Contact: React.FC = () => {
         <motion.div className="contact-links" variants={containerVariants}>
           {contactLinks.map((link, index) => {
             const IconComponent = link.icon;
+            const isResume = link.label === "Download Resume";
+            const isExternal = link.href.startsWith('http');
+
             return (
               <motion.a
                 key={index}
@@ -65,6 +73,8 @@ const Contact: React.FC = () => {
                 className="contact-link"
                 variants={itemVariants}
                 whileHover={{ scale: 1.05 }}
+                {...(isResume && { download: true })}
+                {...(isExternal && { target: "_blank", rel: "noopener noreferrer" })}
               >
                 <IconComponent size={20} />
                 {link.label}
