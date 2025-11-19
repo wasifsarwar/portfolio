@@ -63,6 +63,7 @@ Publish directory: `build`
 
 Wasif Sarwar Siddique
 
+[<img src="./public/logo.svg" alt="Portfolio - wasifsiddique.com" height="28" />](https://wasifsiddique.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/wasifsiddique)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/wasifsarwar)
 [![Email](https://img.shields.io/badge/Email-FFFFFF?style=for-the-badge&logo=gmail&logoColor=EA4335)](mailto:wasif.sarwar9@gmail.com)
