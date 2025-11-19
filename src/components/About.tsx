@@ -34,7 +34,7 @@ const About: React.FC = () => {
     },
     {
       category: "Databases & Systems",
-      technologies: "PostgreSQL, MS SQL, Distributed Systems, ETL Pipelines, WebSocket, Microservices, Datadog"
+      technologies: "PostgreSQL, MS SQL, Distributed Systems, ETL Pipelines, Microservices, Monitoring & Observability"
     }
   ];
 
