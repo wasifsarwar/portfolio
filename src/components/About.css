@@ -97,7 +97,13 @@
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease, filter 0.5s ease;
+  transform-origin: center center;
+}
+
+.about-image-container:hover .about-image {
+  transform: scale(1.08);
+  filter: brightness(1.15);
 }
 
 .image-overlay {
@@ -106,8 +112,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 107, 0, 0.1);
-  transition: opacity 0.3s ease;
+  background: rgba(255, 107, 0, 0.08);
+  transition: opacity 0.5s ease;
   pointer-events: none;
 }
 

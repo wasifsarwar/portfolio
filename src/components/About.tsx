@@ -63,10 +63,10 @@ const About: React.FC = () => {
           </div>
           <div className="about-text">
             <p>
-              I engineer high-performance systems that handle massive scale. At <a href="https://www.axon.com" target="_blank" rel="noopener noreferrer" className="company-link">Axon</a>, I built evidence processing platforms that maintained 99.99% uptime for critical public safety data. Before that, I optimized retail pipelines at <a href="https://www.nike.com" target="_blank" rel="noopener noreferrer" className="company-link">Nike</a> to process 50 million daily transactions with zero data loss.
+              I build systems that handle real scale and real consequences. At <a href="https://www.axon.com" target="_blank" rel="noopener noreferrer" className="company-link">Axon</a>, my evidence processing platform maintained 99.99% uptime for critical public safety data. At <a href="https://www.nike.com" target="_blank" rel="noopener noreferrer" className="company-link">Nike</a>, I optimized retail pipelines processing 50 million daily transactions with zero data loss.
             </p>
             <p style={{ marginTop: '1rem' }}>
-              My work focuses on reliability and speed. I reduced API latency by 30% for <a href="https://www.directv.com/" target="_blank" rel="noopener noreferrer" className="company-link">DIRECTV</a>'s 10 million subscribers and automated supply chain workflows at <a href="https://www.nordstrom.com" target="_blank" rel="noopener noreferrer" className="company-link">Nordstrom</a> to cut manual processing time in half. I'm technology agnostic and driven by curiosity, constantly expanding my skillset to build the best possible solution for any complex problem.
+              My work delivers measurable impact. At <a href="https://www.directv.com/" target="_blank" rel="noopener noreferrer" className="company-link">DIRECTV</a>, I caught 50 weekly schedule conflicts, saved $5M annually, and cut manual work by 85%. At <a href="https://www.nordstrom.com" target="_blank" rel="noopener noreferrer" className="company-link">Nordstrom</a>, I slashed supply chain time in half, automated hiring workflows, and reduced onboarding by 40%. I'm tech-agnostic and love solving hard problems with the right tools.
             </p>
             <div className="skills">
               {skills.map((skill, index) => (

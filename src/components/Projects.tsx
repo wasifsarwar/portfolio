@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
         viewport={{ once: true }}
         variants={containerVariants}
       >
-        <motion.h2 variants={itemVariants}>Backend Projects</motion.h2>
+        <motion.h2 variants={itemVariants}>Projects</motion.h2>
         <motion.div className="projects-grid" variants={containerVariants}>
           {projects.map((project) => (
             <motion.div
