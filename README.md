@@ -64,4 +64,4 @@ Publish directory: `build`
 Wasif Sarwar Siddique  
 - [LinkedIn](https://linkedin.com/in/wasifsiddique)  
 - [Github](https://github.com/wasifsarwar)  
-- [email](mailto:wasif.sarwar9@gmail.com)
+- [Email](mailto:wasif.sarwar9@gmail.com)
