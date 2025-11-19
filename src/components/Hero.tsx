@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import './Hero.css';
 
@@ -7,6 +7,23 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
+  const [displayedText, setDisplayedText] = useState('');
+  const fullText = 'Wasif Siddique';
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const typingInterval = setInterval(() => {
+      if (currentIndex <= fullText.length) {
+        setDisplayedText(fullText.slice(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(typingInterval);
+      }
+    }, 80); // Speed of typing (80ms per character)
+
+    return () => clearInterval(typingInterval);
+  }, []);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -35,7 +52,7 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
         variants={containerVariants}
       >
         <motion.h1 variants={itemVariants}>
-          Hello, I'm <span className="highlight">Wasif Siddique</span>
+          Hello, I'm <span className="highlight typewriter">{displayedText}<span className="cursor">|</span></span>
         </motion.h1>
         <motion.p variants={itemVariants} className="hero-subtitle">
           Software Engineer
