@@ -2,7 +2,7 @@
 
 Personal portfolio showcasing my software engineering work and projects.
 
-**Live:** [https://www.wasifsiddique.com](https://www.wasifsiddique.com/)
+**Live:** [portfolio link](https://www.wasifsiddique.com/)
 
 ## Tech Stack
 
@@ -61,7 +61,8 @@ Publish directory: `build`
 
 ## Contact
 
-Wasif Sarwar Siddique  
-- [LinkedIn](https://linkedin.com/in/wasifsiddique)  
-- [Github](https://github.com/wasifsarwar)  
-- [Email](mailto:wasif.sarwar9@gmail.com)
+Wasif Sarwar Siddique
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/wasifsiddique)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/wasifsarwar)
+[![Email](https://img.shields.io/badge/Email-FFFFFF?style=for-the-badge&logo=gmail&logoColor=EA4335)](mailto:wasif.sarwar9@gmail.com)
