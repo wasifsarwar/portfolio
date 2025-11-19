@@ -58,7 +58,7 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
           Software Engineer
         </motion.p>
         <motion.p variants={itemVariants} className="hero-description">
-          I build reliable, high‑throughput backend services and distributed systems in Java, Golang, and TypeScript‑React, with 4.5 years working at global scale.
+          I build reliable, high‑throughput backend services and distributed systems in Java, Golang, and TypeScript‑React, with 4.5 years of experience working at global scale.
         </motion.p>
         <motion.div variants={itemVariants} className="hero-buttons">
           <button
