@@ -59,9 +59,8 @@ body::after {
   z-index: 10;
 }
 
-/* Section headings with code font */
-section h2,
-section h3 {
+/* All headings with code font for that developer aesthetic */
+h1, h2, h3, h4, h5, h6 {
   font-family: 'JetBrains Mono', monospace;
   font-weight: 600;
   letter-spacing: -0.5px;

@@ -51,15 +51,10 @@ const About: React.FC = () => {
         <motion.div className="about-content" variants={itemVariants}>
           <div className="about-text">
             <p>
-              Software Engineer with 4.5 years of experience designing and scaling globally distributed systems and microservices
-              for global tech organizations. Most recently worked at Axon (public safety technology leader) across Axon Justice
-              and Axon Air divisions, building evidence processing platforms and drone streaming systems.
+              I engineer high-performance systems that handle massive scale. At <a href="https://www.axon.com" target="_blank" rel="noopener noreferrer" className="company-link">Axon</a>, I built evidence processing platforms that maintained 99.99% uptime for critical public safety data. Before that, I optimized retail pipelines at <a href="https://www.nike.com" target="_blank" rel="noopener noreferrer" className="company-link">Nike</a> to process 50 million daily transactions with zero data loss.
             </p>
             <p style={{ marginTop: '1rem' }}>
-              Previously contributed to high-impact projects at Nike (retail data pipelines processing 50M+ daily transactions),
-              DIRECTV (media streaming infrastructure for 10M+ subscribers), and Nordstrom (supply chain automation).
-              Graduated from University of Washington with a Bachelor of Science in Aeronautics & Astronautics
-              (Concentration: Computer Science).
+              My work focuses on reliability and speed. I reduced API latency by 30% for <a href="https://www.directv.com/" target="_blank" rel="noopener noreferrer" className="company-link">DIRECTV</a>'s 10 million subscribers and automated supply chain workflows at <a href="https://www.nordstrom.com" target="_blank" rel="noopener noreferrer" className="company-link">Nordstrom</a> to cut manual processing time in half. I'm technology agnostic and driven by curiosity, constantly expanding my skillset to build the best possible solution for any complex problem.
             </p>
             <div className="skills">
               {skills.map((skill, index) => (
