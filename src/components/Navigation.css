@@ -7,7 +7,7 @@
   backdrop-filter: blur(10px);
   z-index: 1000;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1rem 2rem; /* Match hero section padding structure */
+  padding: 1rem 2rem;
 }
 
 .nav-container {

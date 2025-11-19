@@ -59,8 +59,6 @@
 .image-wrapper {
   position: relative;
   border-radius: 12px;
-  /* Remove overflow: hidden so the border pseudo-element is visible */
-  /* overflow: hidden; */ 
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease;
   z-index: 2; /* Ensure image stays on top */
