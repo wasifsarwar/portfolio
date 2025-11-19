@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio showcasing my software engineering work and projects.
 
-## Available Scripts
+**Live:** [wasifsiddique.netlify.app](https://wasifsiddique.netlify.app/)
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+- React + TypeScript
+- Framer Motion for animations
+- Netlify for hosting
+- Custom CSS (Grid, Flexbox)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Local Development
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+# Install dependencies
+npm install
 
-### `npm test`
+# Start dev server
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Build for production
+npm run build
+```
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+portfolio/
+├── public/
+│   ├── resume/              # Resume PDF
+│   ├── LinkedInHeadshot.jpg
+│   └── logo.svg            # Custom WS logo
+├── src/
+│   ├── components/
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Contact.tsx
+│   │   └── Navigation.tsx
+│   └── App.tsx
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Sections
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Hero** - Name with typewriter effect, tagline, and CTAs
 
-### `npm run eject`
+**About** - Experience at Axon, Nike, DIRECTV, and Nordstrom with quantifiable achievements
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Projects** - MindPulse (AI mental health), Gocart (e-commerce API), Rate Limiter (concurrency)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Contact** - Resume download, email, LinkedIn, GitHub
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Deployment
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Deployed on Netlify with automatic builds from main branch.
 
-## Learn More
+Build command: `npm run build`  
+Publish directory: `build`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Wasif Sarwar Siddique  
+[wasifsiddique.netlify.app](https://wasifsiddique.netlify.app/)  
+[linkedin.com/in/wasifsiddique](https://linkedin.com/in/wasifsiddique)  
+[github.com/wasifsarwar](https://github.com/wasifsarwar)  
+wasif.sarwar9@gmail.com
