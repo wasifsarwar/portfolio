@@ -2,9 +2,11 @@ import React from 'react';
 import './Footer.css';
 
 const Footer: React.FC = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
-      <p>&copy; 2024 Wasif Sarwar Siddique. All rights reserved.</p>
+      <p>&copy; {currentYear} Wasif Sarwar Siddique. All rights reserved.</p>
     </footer>
   );
 };
