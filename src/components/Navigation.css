@@ -75,6 +75,87 @@
   width: 100%;
 }
 
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+/* Animate to X when open */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile menu */
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(11, 11, 15, 0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.mobile-menu ul li button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.9rem 2rem;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.mobile-menu ul li button:hover {
+  color: #ff6b00;
+  background: rgba(255, 107, 0, 0.05);
+}
+
+/* Logo as button */
+.logo {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav {
@@ -82,6 +163,10 @@
   }
 
   .nav-links {
-    gap: 1rem;
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
   }
 }
